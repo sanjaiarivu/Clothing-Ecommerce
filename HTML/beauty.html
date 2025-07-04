@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/beauty.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    
+</head>
+<body>
+    
+
+ <nav id="custom-navbar">
+    <div class="navbar-logo" id="navbar-logo">lOGO</div>
+
+    <ul class="navbar-menu" id="navbar-menu">
+      <li class="navbar-item"><a class="navbar-link" href="../HTML/men.html"><b>MEN</b></a></li>
+      <li class="navbar-item"><a class="navbar-link" href="../HTML/female.html"><b>WOMEN</b></a></li>
+      <li class="navbar-item"><a class="navbar-link" href="../HTML/kids.html"><b>KIDS</b></a></li>
+      <li class="navbar-item"><a class="navbar-link" href="../HTML/shoes.html"><b>SHOES</b></a></li>
+      <li class="navbar-item"><a class="navbar-link" href="../HTML/jewels.html"><b>JEWELS</b></a></li>
+      <li class="navbar-item"><a class="navbar-link" href="../HTML/beauty.html"><b>BEAUTY</b></a></li>
+      <li class="navbar-item"><a class="navbar-link" href="../HTML/decor.html"><b>DECOR</b></a></li>
+      <li class="navbar-item"><a class="navbar-link" href="../HTML/home.html"><b>HOME</b></a></li>
+    </ul>
+
+    <div class="navbar-right" id="navbar-right">
+      <div class="navbar-search" id="navbar-search">
+        <input type="text" class="search-input" id="search-input" placeholder="Search..." oninput="filterProduct()">
+        <button class="search-button" id="search-button"><i class="fas fa-search"></i></button>
+      </div>
+      <div class="navbar-cart" id="navbar-cart">
+        <a href="../HTML/cart.html"><i class="fas fa-shopping-cart"></i></a>
+      </div>
+    </div>
+  </nav>
+
+
+  <br>
+
+
+    <section class="banner"></section>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+  <div class="container">
+    <div class="card">
+      <div class="image-wrapper">
+        <img src="https://m.media-amazon.com/images/I/71puERZN80L._AC_UL480_FMwebp_QL65_.jpg" alt="Product Image">
+        <div class="label">STRAIGHT FIT</div>
+      </div>
+      <div class="content">
+        <h2 class="title">Oversized :Twilight</h2>
+        <p class="subtitle">Brown</p>
+        <p class="price">₹499</p>
+        <button class="cart-btn" onclick="addToCart('Twilight', 'High-quality item perfect for everyday use.', 499)" >Add to Cart</button>
+      </div>
+    </div>
+
+ 
+    <div class="card">
+      <div class="image-wrapper">
+        <img src="https://m.media-amazon.com/images/I/51gbiY5i5ML._AC_UL480_FMwebp_QL65_.jpg" alt="Product Image">
+        <div class="label">BAGGY FIT</div>
+      </div>
+      <div class="content">
+        <h2 class="title">Oversized: Neutral</h2>
+        <p class="subtitle">Sky Blue</p>
+        <p class="price">₹899</p>
+        <button class="cart-btn" onclick="addToCart('Oversized: Neutral', 'Sky Blue', 899)">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="image-wrapper">
+        <img src="https://m.media-amazon.com/images/I/61kQzej+WAL._AC_UL480_FMwebp_QL65_.jpg" alt="Product Image">
+        <div class="label">BAGGY FIT</div>
+      </div>
+      <div class="content">
+        <h2 class="title">TSS Originals: Neutral</h2>
+        <p class="subtitle">Men Oversized Joggers</p>
+        <p class="price">₹1899</p>
+        <button class="cart-btn" onclick="addToCart('Oversized: Neutral', 'Purple', 799)">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="image-wrapper">
+        <img src="https://m.media-amazon.com/images/I/51yQciWM+XL._AC_UL480_FMwebp_QL65_.jpg" alt="Product Image">
+        <div class="label">BAGGY FIT</div>
+      </div>
+      <div class="content">
+        <h2 class="title">TSS Originals: Oversized</h2>
+        <p class="subtitle">Men Oversized Tshirt</p>
+        <p class="price">₹1899</p>
+        <button class="cart-btn" onclick="addToCart('Oversized: Tshirt', 'Light Green', 699)">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <div class="container">
+    <div class="card">
+      <div class="image-wrapper">
+        <img src="https://m.media-amazon.com/images/I/51Y2UGLW+bL._AC_UL480_FMwebp_QL65_.jpg" alt="Product Image">
+        <div class="label">STRAIGHT FIT</div>
+      </div>
+      <div class="content">
+        <h2 class="title">Linen Pants: Twilight</h2>
+        <p class="subtitle">Cotton Linen Pants</p>
+        <p class="price">₹1699</p>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="image-wrapper">
+        <img src="https://m.media-amazon.com/images/I/51IgR2yRK2L._AC_UL480_FMwebp_QL65_.jpg" alt="Product Image">
+        <div class="label">BAGGY FIT</div>
+      </div>
+      <div class="content">
+        <h2 class="title">TSS Originals: Neutral</h2>
+        <p class="subtitle">Men Oversized Joggers</p>
+        <p class="price">₹1899</p>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="image-wrapper">
+        <img src="https://m.media-amazon.com/images/I/61b2tDBxhlL._AC_UL480_FMwebp_QL65_.jpg" alt="Product Image">
+        <div class="label">BAGGY FIT</div>
+      </div>
+      <div class="content">
+        <h2 class="title">TSS Originals: Neutral</h2>
+        <p class="subtitle">Men Oversized Joggers</p>
+        <p class="price">₹1899</p>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="image-wrapper">
+        <img src="https://m.media-amazon.com/images/I/41yAKxKqv4L._AC_UL480_FMwebp_QL65_.jpg" alt="Product Image">
+        <div class="label">BAGGY FIT</div>
+      </div>
+      <div class="content">
+        <h2 class="title">TSS Originals: Neutral</h2>
+        <p class="subtitle">Men Oversized Joggers</p>
+        <p class="price">₹1899</p>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+<br>
+<br>
+<br>
+<br>
+
+
+  <div class="custom-card-wrapper">
+  <div class="custom-card small" style="margin-bottom: 100px;">
+    <img src="https://www.voylla.com/cdn/shop/files/Artboard_1_copy_5-1_b24c216e-8dcf-40d9-a27d-6038e5ff6523.jpg?v=1741845755" alt="Left Card">
+  </div>
+  <div class="custom-card large">
+    <img src="https://www.voylla.com/cdn/shop/files/Artboard_1_copy_5_798be8e4-923e-4fe2-9e8c-bd5dca936b20.jpg?v=1741845747" alt="Center Card">
+  </div>
+  <div class="custom-card small" style="margin-bottom: 100px;">
+    <img src="https://www.voylla.com/cdn/shop/files/Artboard_1_copy_2_6c42a536-d5c8-425d-92ff-5f40d2d9ca08.jpg?v=1739126894" alt="Right Card">
+  </div>
+</div>
+
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <div class="container">
+    <div class="card">
+      <div class="image-wrapper">
+        <img src="https://m.media-amazon.com/images/I/61Jo8DLT3AL._AC_UL480_FMwebp_QL65_.jpg" alt="Product Image">
+        <div class="label">STRAIGHT FIT</div>
+      </div>
+      <div class="content">
+        <h2 class="title">Linen Pants: Twilight</h2>
+        <p class="subtitle">Cotton Linen Pants</p>
+        <p class="price">₹1699</p>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="image-wrapper">
+        <img src="https://m.media-amazon.com/images/I/61bOfABUJxL._AC_UL480_FMwebp_QL65_.jpg" alt="Product Image">
+        <div class="label">BAGGY FIT</div>
+      </div>
+      <div class="content">
+        <h2 class="title">TSS Originals: Neutral</h2>
+        <p class="subtitle">Men Oversized Joggers</p>
+        <p class="price">₹1899</p>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="image-wrapper">
+        <img src="https://m.media-amazon.com/images/I/61kQzej+WAL._AC_UL480_FMwebp_QL65_.jpg" alt="Product Image">
+        <div class="label">BAGGY FIT</div>
+      </div>
+      <div class="content">
+        <h2 class="title">TSS Originals: Neutral</h2>
+        <p class="subtitle">Men Oversized Joggers</p>
+        <p class="price">₹1899</p>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="image-wrapper">
+        <img src="https://m.media-amazon.com/images/I/61kQzej+WAL._AC_UL480_FMwebp_QL65_.jpg" alt="Product Image">
+        <div class="label">BAGGY FIT</div>
+      </div>
+      <div class="content">
+        <h2 class="title">TSS Originals: Neutral</h2>
+        <p class="subtitle">Men Oversized Joggers</p>
+        <p class="price">₹1899</p>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <div class="container">
+    <div class="card">
+      <div class="image-wrapper">
+        <img src="https://m.media-amazon.com/images/I/51ZtF7SAYqL._AC_UL480_FMwebp_QL65_.jpg" alt="Product Image">
+        <div class="label">STRAIGHT FIT</div>
+      </div>
+      <div class="content">
+        <h2 class="title">Linen Pants: Twilight</h2>
+        <p class="subtitle">Cotton Linen Pants</p>
+        <p class="price">₹1699</p>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="image-wrapper">
+        <img src="https://m.media-amazon.com/images/I/515W5cQZxDL._AC_UL480_FMwebp_QL65_.jpg" alt="Product Image">
+        <div class="label">BAGGY FIT</div>
+      </div>
+      <div class="content">
+        <h2 class="title">TSS Originals: Neutral</h2>
+        <p class="subtitle">Men Oversized Joggers</p>
+        <p class="price">₹1899</p>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="image-wrapper">
+        <img src="https://m.media-amazon.com/images/I/51asZBikaOL._AC_UL480_FMwebp_QL65_.jpg" alt="Product Image">
+        <div class="label">BAGGY FIT</div>
+      </div>
+      <div class="content">
+        <h2 class="title">TSS Originals: Neutral</h2>
+        <p class="subtitle">Men Oversized Joggers</p>
+        <p class="price">₹1899</p>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="image-wrapper">
+        <img src="https://m.media-amazon.com/images/I/51ZVtvs+ozL._AC_UL480_FMwebp_QL65_.jpg" alt="Product Image">
+        <div class="label">BAGGY FIT</div>
+      </div>
+      <div class="content">
+        <h2 class="title">TSS Originals: Neutral</h2>
+        <p class="subtitle">Men Oversized Joggers</p>
+        <p class="price">₹1899</p>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+    
+
+<!-- --------------------------------------- offers  -->
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+<!-- <div class="carousel-container">
+  <button class="carousel-btn left" onclick="moveCarousel(-1)">&#8592;</button>
+  <div class="carousel" id="carousel">
+    <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/naruto__copy.jpg?format=webp&w=480&dpr=1.3" alt="Image 1" />
+    <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/Venom2.jpg?format=webp&w=480&dpr=1.3" alt="Image 2" />
+    <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/dc-1.jpg?format=webp&w=480&dpr=1.3" alt="Image 3" />
+    <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/harry_potter_fandom_tile.jpg?format=webp&w=480&dpr=1.3" alt="">
+    <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/Tom-n-jerry_1.jpg?format=webp&w=480&dpr=1.3" alt="">
+    <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/one-piece.jpg?format=webp&w=480&dpr=1.3" alt="">
+    <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/looney_tunes_fandom_tile_men.jpg?format=webp&w=480&dpr=1.3" alt="">
+    <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/star_wars_shop_by_fandom.jpg?format=webp&w=480&dpr=1.3" alt="">
+  </div>
+  <button class="carousel-btn right" onclick="moveCarousel(1)">&#8594;</button>
+</div> -->
+
+
+
+
+  
+<!-- footer -->
+
+
+  <div class="custom-footer">
+  <div class="custom-footer-top">
+    <h2>Over <strong>6 Million</strong> Happy Customers</h2>
+  </div>
+
+  <div class="custom-footer-links">
+    <div class="custom-footer-column">
+      <h3>NEED HELP</h3>
+      <ul>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Track Order</a></li>
+        <li><a href="#">Returns & Refunds</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">My Account</a></li>
+        <li><span>💰 COD Available</span></li>
+        <li><span>🔁 30 Days Easy Returns</span></li>
+      </ul>
+    </div>
+
+    <div class="custom-footer-column">
+      <h3>COMPANY</h3>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Investor Relation</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Gift Vouchers</a></li>
+        <li><a href="#">Community Initiatives</a></li>
+      </ul>
+    </div>
+
+    <div class="custom-footer-column">
+      <h3>MORE INFO</h3>
+      <ul>
+        <li><a href="#">T&C</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Sitemap</a></li>
+        <li><a href="#">Get Notified</a></li>
+        <li><a href="#">Blogs</a></li>
+      </ul>
+    </div>
+
+    <div class="custom-footer-column">
+      <h3>STORE NEAR ME</h3>
+      <ul>
+        <li><a href="#">Gandhinagar</a></li>
+        <li><a href="#">Jodhpur</a></li>
+        <li><a href="#">Vadodara</a></li>
+        <li><a href="#">Mumbai</a></li>
+        <li><a href="#" style="color: blue;">View More</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="custom-footer-app">
+    <span>📱 EXPERIENCE THE SOULED STORE APP</span><br>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" class="custom-footer-app-badge">
+    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store" class="custom-footer-app-badge">
+  </div>
+
+  <div class="custom-footer-bottom">
+    <span>Follow Us:</span>
+    <div class="custom-footer-socials">
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" /></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" /></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Snapchat" /></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968830.png" alt="Twitter (X)" /></a>
+    </div>
+  </div>
+</div>
+
+  
+  <button id="scrollToTopBtn" title="Go to top">↑</button>
+  
+
+
+
+<script src="../JAVA SCRIPT/beauty.js"></script>
+
+</body>
+</html>

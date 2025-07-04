@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Payment Page</title>
+   <link rel="stylesheet" href="../CSS/payment.css">
+</head>
+<body>
+  <h1>Payment Page</h1>
+  <div class="payment-container">
+  <div id="payment-details">
+    <p><strong>Order ID:</strong> #123456</p>
+    <p><strong>Total Amount:</strong> $49.99</p>
+  </div>
+</div>
+
+
+  <form id="payment-form">
+    <label>Card Number: <input type="text" required></label>
+    <label>Expiry Date: <input type="text" placeholder="MM/YY" required></label>
+    <label>CVV: <input type="text" required></label>
+    <button type="submit">Pay Now</button>
+  </form>
+
+  <!-- Payment Success Animation Overlay -->
+  <div class="overlay" id="overlay">
+    <div class="payment-box">
+      <video id="checkmarkVideo" class="checkmark" autoplay muted>
+        <source src="../IMAGES/Payment Success.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="success-message">Payment Done Successfully</div>
+      <button class="continue-button" onclick="closeOverlay()">Continue</button>
+    </div>
+  </div>
+
+
+
+   
+
+  <script src="../JAVA SCRIPT/payment.js"></script>
+</body>
+</html>

@@ -1,0 +1,214 @@
+/* homepage.css */
+
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Top Nav (n1) */
+#n1 {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+#n1 .ic i {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#n1 #pro {
+    display: flex;
+    align-items: center;
+}
+
+#n1 .ls {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Middle Nav (n2) */
+#n2 {
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+#n2 #sea {
+    width: 40%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+.account-links h5 {
+    margin: 0;
+}
+
+/* Bottom Nav (n3) */
+#n3 {
+    background-color: #000;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+    font-weight: bold;
+}
+
+#n3 div {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+#n3 div:hover {
+    color: #ffcc00;
+}
+
+/* Carousel */
+.carousel-inner img {
+    object-fit: cover;
+}
+
+#dem {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 600px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#one, #two, #three {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    color: white;
+}
+
+#two {
+    top: 45%;
+}
+
+.btt {
+    padding: 10px 20px;
+    background-color: #ffc107;
+    border: none;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+}
+
+.btt:hover {
+    background-color: #e0a800;
+}
+
+/* Discount Cards */
+#cards {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0;
+    background-color: #fff;
+}
+
+.ca {
+    width: 200px;
+    height: 120px;
+    background-color: #343a40;
+    color: white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Category Carousel */
+.category-carousel {
+    background-color: #f1f1f1;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.category-carousel h2 {
+    margin-bottom: 20px;
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 15px;
+}
+
+.category {
+    min-width: 150px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.category img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.category span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.carousel-btn {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.carousel-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Scroll to Top Button */
+#round {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}

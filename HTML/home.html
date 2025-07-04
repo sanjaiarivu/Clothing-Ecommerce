@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+</head>
+<body>
+    
+        <nav id="nav1">
+            <div id="logos" ><i class="fa-brands fa-square-facebook"></i><i class="fa-brands fa-square-twitter"></i><i class="fa-brands fa-square-youtube"></i><i class="fa-brands fa-square-instagram"></i></div>
+            <div>
+              <i class="fa-solid fa-user"></i>
+              <div><b>My Account</b></div>
+              <div id="loggedInSection" style="display: none; margin-top: 9px;">
+  <h6 id="welcomeMessage">Welcome</h6>
+</div>
+
+<div id="guestSection">
+  <a href="../HTML/login.html"><button class="buttonsam">LOGIN</button></a>
+  <a href="../HTML/Signup.html"><button class="buttonsam">SIGNUP</button></a>
+</div>
+  <button onclick="logout()" style="height: 40px;width: 70px; background-color: gray; color: white; border-radius: 10px;">Logout</button>
+            </div>
+            
+        </nav>
+
+        <nav id="nav2">
+            <div>📞(123) 456 7890</div>
+            <input type="text" placeholder="Search">
+            <div><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></i></div>
+        </nav>
+
+        <nav id="nav3" >
+            <div><a href="#carousel-track" style="text-decoration: none;color: black;">category</a></div>
+            <div><a href="#footer" style="text-decoration: none;color: black;">About</a></div>
+            <!-- <div><a href="" style="text-decoration: none;color: black;">Contact us</a></div> -->
+            <div><a href="#sale" style="text-decoration: none;color: black;">Sale</a></div>
+            <div><a href="../HTML/cart.html" style="text-decoration: none;color: black;">Orders</a></div>
+        </nav>
+
+       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/banner-images/IMG_8605.jpg?format=webp&w=1500&dpr=1.3"  class="d-block w-100" alt="..." style="background-color: #010b1d; height: 550px;">
+          <!-- <div id="demologo"></div> -->
+         <!-- <div style="position: absolute; bottom: 100px; left: 200px;">
+          <h2 style="color: rgb(255, 255, 255);">Discover the New Era of Fasion!</h2>
+          <h1 style="color: rgb(255, 255, 255);">Get in to Fasion</h1>
+          <h1 style="color: black;"></h1>
+          <br>
+          <button style="padding: 13px;border-radius: 25px; width: 260px; background-color: #502c94;border: none; color: white; "><b>Find New Fasion </b></button>
+         </div> -->
+        </div>
+        <div class="carousel-item">
+          <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/banner-images/homepage_3_dEY3SOu.jpg?format=webp&w=1500&dpr=1.3" class="d-block w-100" alt="..." style="background-color: #118c55; height: 550px;">
+          <!-- <div style="position: absolute; bottom: 100px; left: 200px;">
+            <h1 style="color: #502c94;">What are you looking for,</h1>
+            <h2 style="color: #000000;">Here we Go</h2>
+            <br>
+            <button style="padding: 13px;border-radius: 25px; width: 260px; background-color:#502c94;border: none;color: white; "><b>Open Demat Account </b></button>
+           </div> -->
+        </div>
+        <div class="carousel-item">
+          <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/banner-images/homepage_rC1Zs3c.jpg?format=webp&w=1500&dpr=1.3" class="d-block w-100" alt="..." style="background-color: #d375ff; height: 550px;">
+          <!-- <div style="position: absolute; bottom: 100px; left: 200px;">
+            <h1 style="color: #d49ce7;">Download All your Favourite apps</h1>
+            <h2 style="color: white;">from India's very own</h2>
+            <h2 style="color: white">Android app store</h2>
+            <br>
+            <button style="padding: 13px;border-radius: 25px; width: 260px; background-color: white;border: none;color: black; "><b>Open Demat Account </b></button>
+           </div> -->
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  
+
+
+    <br>
+    <br>
+    <br>
+
+    <section class="category-carousel" style="width: 100%;">
+  <h2>What Are You Shopping For Today?</h2>
+
+  <div class="carousel-container" >
+    <button class="carousel-btn left" onclick="movecarousel(-1)">&#10094;</button>
+
+    <div class="carousel-scroll" id="carousel-track">
+      <div class="category" id="fem">
+        <img src="https://www.shutterstock.com/image-photo/details-everyday-elegant-look-unrecognizable-260nw-1901448457.jpg" alt="Female"><span>Women</span>
+      </div>
+      <div class="category" id="men">
+        <img src="https://lifestylebyps.com/cdn/shop/articles/5_coolest_winter_outfits_for_men_winter_style_fallstyle_mens_fashion_street_style_520x500_d1fdfd3b-cbdf-46c7-a14a-447649c6f62e_600x.jpg?v=1737017316" alt="Men"><span>Men</span>
+      </div>
+      <div class="category" id="kids">
+        <img src="https://images.meesho.com/images/products/409390317/hgbdg_512.webp" alt="Kids"><span>Kids</span>
+      </div>
+      <div class="category" id="shoes">
+        <img src="https://image.made-in-china.com/2f0j00qUwcrsHbbRgo/Men-s-Fashion-Sneakers-Breathable-Soft-Sole-Casual-Shoes-Wholesale.webp" alt="Shoes"><span>Shoes</span>
+      </div>
+      <div class="category" id="jewel">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/ver110124objfashionjewelry-002-cropped-670966234acd7.jpg?resize=980:*" alt="Jewel"><span>Jewelry</span>
+      </div>
+      <div class="category" id="beauty">
+        <img src="https://images.yourstory.com/cs/4/211ccaf00e6d11e997fe8f165dce9bb1/Imageifxu-1596799036123-1601633425902.jpg" alt="Beauty"><span>Beauty</span>
+      </div>
+      <div class="category" id="decor">
+        <img src="https://ashlos.com/cdn/shop/products/71HE7MD1yYL._AC_SL1500.jpg?v=1671198476" alt="Decor"><span>Decor</span>
+      </div>
+      <div class="category" id="home">
+        <img src="../IMAGES/home.jpg" alt="Home"><span>Home</span>
+      </div>
+    </div>
+
+    <button class="carousel-btn right" onclick="movecarousel(1)">&#10095;</button>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<div class="custom-carousel-wrapper" style="margin-top: 100px;">
+  <div class="custom-carousel-container">
+    <button class="custom-carousel-btn custom-carousel-left" onclick="moveCustomCarousel(-1)">&#8592;</button>
+    <div class="custom-carousel-track" id="customCarousel">
+      <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/naruto__copy.jpg?format=webp&w=480&dpr=1.3" alt="Image 1" />
+      <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/Venom2.jpg?format=webp&w=480&dpr=1.3" alt="Image 2" />
+      <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/dc-1.jpg?format=webp&w=480&dpr=1.3" alt="Image 3" />
+      <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/Collection_tile_3_Txj4mxW.jpg?format=webp&w=480&dpr=1.3" alt="Image 4" />
+      <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/Collection_tile_2_dxWJJzL.jpg?format=webp&w=480&dpr=1.3" alt="Image 5" />
+      <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/one-piece.jpg?format=webp&w=480&dpr=1.3" alt="Image 6" />
+      <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/looney_tunes_fandom_tile_men.jpg?format=webp&w=480&dpr=1.3" alt="Image 7" />
+      <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/star_wars_shop_by_fandom.jpg?format=webp&w=480&dpr=1.3" alt="Image 8" />
+    </div>
+    <button class="custom-carousel-btn custom-carousel-right" onclick="moveCustomCarousel(1)">&#8594;</button>
+  </div>
+</div>
+
+
+
+
+<div class="catgrid-wrapper" id="sale">
+    <h2 class="catgrid-title">CATEGORIES</h2>
+    <div class="catgrid-container">
+      <div class="catgrid-card">
+        <!-- <span class="catgrid-label">OVERSIZED T-SHIRTS</span> -->
+        <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/Web_gzNkWhw.jpg?format=webp&w=480&dpr=1.3" alt="Oversized T-Shirts">
+      </div>
+      <div class="catgrid-card">
+        <!-- <span class="catgrid-label">ALL BOTTOMS</span> -->
+        <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/Mens_small_Category_Tile.1_JvulPUn.jpg?format=webp&w=480&dpr=1.3" alt="All Bottoms">
+      </div>
+      <div class="catgrid-card">
+        <!-- <span class="catgrid-label">SHIRTS</span> -->
+        <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/category_tile_kUEJ2SF.jpg?format=webp&w=480&dpr=1.3" alt="Shirts">
+      </div>
+      <div class="catgrid-card">
+        <!-- <span class="catgrid-label">POLOS</span> -->
+        <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/Bottomwear_copy_MDqF9c2.jpg?format=webp&w=480&dpr=1.3" alt="Polos">
+      </div>
+    </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <div class="catgrid-container">
+      <div class="catgrid-card">
+        <!-- <span class="catgrid-label">OVERSIZED T-SHIRTS</span> -->
+        <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/CATEGORY_TILE_bUKt3qk.jpg?format=webp&w=480&dpr=1.3" alt="Oversized T-Shirts">
+      </div>
+      <div class="catgrid-card">
+        <!-- <span class="catgrid-label">ALL BOTTOMS</span> -->
+        <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/category-tile_1_TGDavMX.jpg?format=webp&w=480&dpr=1.3" alt="All Bottoms">
+      </div>
+      <div class="catgrid-card">
+        <!-- <span class="catgrid-label">SHIRTS</span> -->
+        <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/wings-collection-tile_lE1rlQI.jpg?format=webp&w=480&dpr=1.3" alt="Shirts">
+      </div>
+      <div class="catgrid-card">
+        <!-- <span class="catgrid-label">POLOS</span> -->
+        <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/category_tile_cargo_1_hFUcN86.jpg?format=webp&w=480&dpr=1.3" alt="Polos">
+      </div>
+    </div>
+  </div>
+
+<div class="custom-footer" id="footer">
+  <div class="custom-footer-top">
+    
+    <h2>Over <strong>6 Million</strong> Happy Customers</h2>
+  </div>
+
+  <div class="custom-footer-links">
+    <div class="custom-footer-column">
+      <h3>NEED HELP</h3>
+      <ul>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Track Order</a></li>
+        <li><a href="#">Returns & Refunds</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">My Account</a></li>
+        <li><span>💰 COD Available</span></li>
+        <li><span>🔁 30 Days Easy Returns</span></li>
+      </ul>
+    </div>
+
+    <div class="custom-footer-column">
+      <h3>COMPANY</h3>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Investor Relation</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Gift Vouchers</a></li>
+        <li><a href="#">Community Initiatives</a></li>
+      </ul>
+    </div>
+
+    <div class="custom-footer-column">
+      <h3>MORE INFO</h3>
+      <ul>
+        <li><a href="#">T&C</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Sitemap</a></li>
+        <li><a href="#">Get Notified</a></li>
+        <li><a href="#">Blogs</a></li>
+      </ul>
+    </div>
+
+    <div class="custom-footer-column">
+      <h3>STORE NEAR ME</h3>
+      <ul>
+        <li><a href="#">Gandhinagar</a></li>
+        <li><a href="#">Jodhpur</a></li>
+        <li><a href="#">Vadodara</a></li>
+        <li><a href="#">Mumbai</a></li>
+        <li><a href="#" style="color: blue;">View More</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="custom-footer-app">
+    <span>📱 EXPERIENCE THE SOULED STORE APP</span><br>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" class="custom-footer-app-badge">
+    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store" class="custom-footer-app-badge">
+  </div>
+
+  <div class="custom-footer-bottom">
+    <span>Follow Us:</span>
+    <div class="custom-footer-socials">
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" /></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" /></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Snapchat" /></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968830.png" alt="Twitter (X)" /></a>
+    </div>
+  </div>
+</div>
+
+
+    <script src="../JAVA SCRIPT/home.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+</body>
+</html>

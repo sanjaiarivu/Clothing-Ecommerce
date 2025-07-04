@@ -1,0 +1,372 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+#custom-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 12px 24px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+#navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+#navbar-menu {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item {
+  display: inline-block;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: #007bff;
+}
+
+#navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+#navbar-search {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 4px 8px;
+}
+
+#search-input {
+  border: none;
+  outline: none;
+  padding: 4px 8px;
+  font-size: 1rem;
+  width: 240px;
+}
+
+#search-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+  font-size: 1rem;
+}
+
+#search-button:hover {
+  color: #007bff;
+}
+
+#navbar-cart a {
+  color: #333;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+#navbar-cart a:hover {
+  color: #007bff;
+}
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  padding: 20px;
+}
+.banner{
+    height: 500px;
+    width: 100%;
+    background-color: red;
+    background-image: url("https://www.voylla.com/cdn/shop/files/s_3.jpg?v=1744373859");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  justify-content: center;
+}
+
+.card {
+  background: #fff;
+  width: 250px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.label {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #000;
+  color: white;
+  text-align: center;
+  padding: 8px 0;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.content {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.title {
+  color: #0d3b66;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #555;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+}
+
+.cart-btn {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cart-btn:hover {
+  background-color: #0056b3;
+}
+
+
+.custom-card-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.custom-card {
+  flex-grow: 1;
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: #f0f0f0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.custom-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.custom-card:hover {
+  transform: scale(1.05);
+}
+
+.custom-card.small {
+  flex: 1;
+}
+
+.custom-card.large {
+  flex: 1.5;
+}
+
+
+
+
+
+
+
+/* footer----------- */
+
+
+.custom-footer {
+  background-color: #e6e6e6;
+  padding: 40px 20px;
+  font-family: sans-serif;
+}
+
+.custom-footer-top h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.custom-footer-top h2 strong {
+  font-weight: 900;
+}
+
+.custom-footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.custom-footer-column {
+  flex: 1;
+  min-width: 200px;
+}
+
+.custom-footer-column h3 {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.custom-footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.custom-footer-column li {
+  margin: 8px 0;
+  color: #333;
+  font-weight: 500;
+}
+
+.custom-footer-column a {
+  text-decoration: none;
+  color: #333;
+}
+
+.custom-footer-app {
+  text-align: center;
+  margin: 30px 0;
+  font-weight: bold;
+}
+
+.custom-footer-app-badge {
+  height: 40px;
+  margin: 10px 8px;
+}
+
+.custom-footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.custom-footer-socials img {
+  height: 30px;
+  margin: 0 5px;
+  vertical-align: middle;
+}
+
+
+#scrollToTopBtn{
+  position: fixed;
+   z-index: 2000;
+  bottom: 30px;
+  right: 30px;
+  display: none;
+  font-size: 24px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 12px 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  transition: opacity 0.3s ease;
+ 
+}
+
+#scrollToTopBtn:hover {
+  background-color: #555;
+}
+
+
+
+/*               buy now          */
+/* 
+.card .content .cart-btn,
+.card .content .buy-btn {
+   width: 10px;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  margin-right: 8px;
+}
+
+.card .content .cart-btn {
+  background-color: #ff5757;
+  color: white;
+}
+
+.card .content .cart-btn:hover {
+  background-color: #e04e4e;
+}
+
+.card .content .buy-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.card .content .buy-btn:hover {
+  background-color: #3e9141;
+}
+
+
+.card .content .cart-btn:last-child,
+.card .content .buy-btn:last-child {
+  margin-right: 0;
+} */
